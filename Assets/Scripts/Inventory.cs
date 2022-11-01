@@ -13,6 +13,10 @@ public class Inventory : MonoBehaviour
             {"Aspirin", 1 }
         };
         Debug.LogFormat("Items: {0}", itemInventory.Count);
+
+        itemInventory.Add("Throwing Knife", 3);
+        itemInventory["Potion"] = 10;
+        Debug.LogFormat("Items: {0}", itemInventory.Count);
     }
 
     void Update()
