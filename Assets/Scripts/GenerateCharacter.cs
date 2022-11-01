@@ -8,6 +8,11 @@ public class GenerateCharacter : MonoBehaviour
 
     public string weaponType = "Arcane Staff";
 
+    /// <summary>
+    /// Создает героя по 2-м параметрам
+    /// </summary>
+    /// <param name="name"></param> имя
+    /// <param name="level"></param> уровень
     public int generateHero(string name, int level)
     {
         //Debug.LogFormat("Character: {0} - Level: {1}", name, level);
@@ -43,11 +48,7 @@ public class GenerateCharacter : MonoBehaviour
         }
 
 }
-    /// <summary>
-    /// Создает героя по 2-м параметрам
-    /// </summary>
-    /// <param name="name"></param> имя
-    /// <param name="level"></param> уровень
+    
     
 
     //void Update()
