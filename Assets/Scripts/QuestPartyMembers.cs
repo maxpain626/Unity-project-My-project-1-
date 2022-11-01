@@ -21,6 +21,11 @@ public class QuestPartyMembers : MonoBehaviour
             }
         }
 
+        foreach(string partyMember in questPartyMembers)
+        {
+            Debug.LogFormat("{0} - Here!", partyMember);
+        }
+
     }
 
     void Update()

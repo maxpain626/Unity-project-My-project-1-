@@ -12,15 +12,19 @@ public class Inventory : MonoBehaviour
             {"Antidote", 7 },
             {"Aspirin", 1 }
         };
-        Debug.LogFormat("Items: {0}", itemInventory.Count);
+        //Debug.LogFormat("Items: {0}", itemInventory.Count);
+        //itemInventory.Add("Throwing Knife", 3);
+        //itemInventory["Potion"] = 10;
+        //Debug.LogFormat("Items: {0}", itemInventory.Count);
 
-        itemInventory.Add("Throwing Knife", 3);
-        itemInventory["Potion"] = 10;
-        Debug.LogFormat("Items: {0}", itemInventory.Count);
+        foreach(KeyValuePair<string, int>kvp in itemInventory)
+        {
+            Debug.LogFormat("Item: {0} - {1}g", kvp.Key, kvp.Value);
+        }
     }
 
-    void Update()
-    {
+    //void Update()
+    //{
         
-    }
+    //}
 }
