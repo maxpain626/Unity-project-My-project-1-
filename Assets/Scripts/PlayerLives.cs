@@ -6,6 +6,8 @@ public class PlayerLives : MonoBehaviour
 {
     void Start()
     {
+        Character hero = new Character("Agatha");
+        hero.PrintStatsInfo();
 
         int playerLives = 3;
 
