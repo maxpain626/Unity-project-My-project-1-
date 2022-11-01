@@ -14,7 +14,13 @@ public class QuestPartyMembers : MonoBehaviour
         for (int i = 0; i < questPartyMembers.Count; i++)
         {
             Debug.LogFormat("Index: {0} - {1}", i, questPartyMembers[i]);
+
+            if (questPartyMembers[i] == "Merlin the Wise")
+            {
+                Debug.Log("Glad you're here Merlin!");
+            }
         }
+
     }
 
     void Update()
