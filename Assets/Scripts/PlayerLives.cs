@@ -6,6 +6,7 @@ public class PlayerLives : MonoBehaviour
 {
     void Start()
     {
+
         int playerLives = 3;
 
         while (playerLives > 0)
