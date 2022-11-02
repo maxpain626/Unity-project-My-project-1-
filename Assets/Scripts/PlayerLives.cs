@@ -9,6 +9,9 @@ public class PlayerLives : MonoBehaviour
         Character hero = new Character("Agatha");
         hero.PrintStatsInfo();
 
+        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        huntingBow.PrintWeaponStats();
+
         int playerLives = 3;
 
         while (playerLives > 0)
