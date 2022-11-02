@@ -6,9 +6,6 @@ public class PlayerLives : MonoBehaviour
 {
     void Start()
     {
-        Paladin heroPaladin1 = new Paladin("Holy Bill");
-        heroPaladin1.PrintStatsInfo();
-
         Character hero = new Character("Agatha");
         hero.PrintStatsInfo();
 
@@ -19,6 +16,9 @@ public class PlayerLives : MonoBehaviour
         warBow.name = "War Bow";
         warBow.damage = 155;
         warBow.PrintWeaponStats();
+
+        Paladin knight = new Paladin("Sir Arthur", huntingBow);
+        knight.PrintStatsInfo();
 
         int playerLives = 3;
 
