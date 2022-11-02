@@ -5,11 +5,17 @@ using UnityEngine;
 public class PlayerLives : MonoBehaviour
 {
     private Transform camTransform;
+    public GameObject squareHero;
+    private Transform transformSquare;
 
     void Start()
     {
         camTransform = this.GetComponent<Transform>();
         Debug.Log(camTransform.localPosition);
+
+        squareHero = GameObject.Find("SquareHero");
+        transformSquare = squareHero.GetComponent<Transform>();
+        Debug.Log(transformSquare.localPosition);
 
         Character hero = new Character("Agatha");
         hero.PrintStatsInfo();
