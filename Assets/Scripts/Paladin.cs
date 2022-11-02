@@ -13,6 +13,6 @@ public class Paladin : Character
 
     public override void PrintStatsInfo()
     {
-        Debug.LogFormat("Hey {0}! Take up your {1}", name, weapon.name);
+        Debug.LogFormat("Hey {0}! Take up your {1}!", name, weapon.name);
     }
 }

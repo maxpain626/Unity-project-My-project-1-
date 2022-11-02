@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PlayerLives : MonoBehaviour
 {
+    private Transform camTransform;
+
     void Start()
     {
+        camTransform = this.GetComponent<Transform>();
+        Debug.Log(camTransform.localPosition);
+
         Character hero = new Character("Agatha");
         hero.PrintStatsInfo();
 
