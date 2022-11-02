@@ -19,6 +19,12 @@ public class Character
     {
         Debug.LogFormat("Hero: {0} - {1}exp", name, exp);
     }
+
+    private void Reset()
+    {
+        this.name = "Not assigned";
+        this.exp = 0;
+    }
 }
 
 /// <summary>
