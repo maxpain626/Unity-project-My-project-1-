@@ -13,7 +13,7 @@ public class PlayerLives : MonoBehaviour
         camTransform = this.GetComponent<Transform>();
         Debug.Log(camTransform.localPosition);
 
-        squareHero = GameObject.Find("SquareHero");
+        squareHero = GameObject.Find("PlayerHero");
         transformSquare = squareHero.GetComponent<Transform>();
         Debug.Log(transformSquare.localPosition);
 

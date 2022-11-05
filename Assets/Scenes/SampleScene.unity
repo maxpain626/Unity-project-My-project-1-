@@ -631,7 +631,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1730994731}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1399783249
 Rigidbody2D:
@@ -773,7 +773,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1840025646}
   - {fileID: 1399783248}
   m_Father: {fileID: 519420032}
   m_RootOrder: 0
@@ -1034,8 +1033,9 @@ GameObject:
   - component: {fileID: 1840025645}
   - component: {fileID: 1840025647}
   - component: {fileID: 1840025648}
+  - component: {fileID: 1840025649}
   m_Layer: 0
-  m_Name: SquareHero
+  m_Name: PlayerHero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1101,12 +1101,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840025644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -138, y: -284, z: -128}
-  m_LocalScale: {x: 128, y: 128, z: 128}
+  m_LocalPosition: {x: -1.078125, y: -2.21875, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1730994731}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1840025647
 BoxCollider2D:
@@ -1155,6 +1155,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1840025649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840025644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3898a24f98373428d0cf36d20b7ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  rotateSpeed: 75
 --- !u!1 &1864053535
 GameObject:
   m_ObjectHideFlags: 0
