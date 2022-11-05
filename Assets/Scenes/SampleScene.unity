@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthPickUp2
       objectReference: {fileID: 0}
+    - target: {fileID: 3868429970113241680, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
 --- !u!1 &859335985
@@ -596,6 +600,10 @@ PrefabInstance:
     - target: {fileID: 3868429970113241678, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
       propertyPath: m_Name
       value: HealthPickUp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868429970113241680, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
@@ -1154,7 +1162,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1840025649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1358,6 +1366,10 @@ PrefabInstance:
     - target: {fileID: 3868429970113241678, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
       propertyPath: m_Name
       value: HealthPickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868429970113241680, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5229ac8a7f3adbf4899fd55ab312e1bc, type: 3}
