@@ -754,6 +754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomb02
       objectReference: {fileID: 0}
+    - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: delay
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
 --- !u!1 &1313884799
@@ -1533,6 +1537,10 @@ PrefabInstance:
     - target: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: m_Name
       value: Bomb01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: delay
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: triggerBomb

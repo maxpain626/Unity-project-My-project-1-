@@ -8,11 +8,13 @@ public class AutoDestroyOnExit : StateMachineBehaviour
     {
         public float delay = 0f;
 
-        void Start()
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+                Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+            }
         }
     }
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -43,4 +45,3 @@ public class AutoDestroyOnExit : StateMachineBehaviour
     //{
     //    // Implement code that sets up animation IK (inverse kinematics)
     //}
-}
