@@ -206,5 +206,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106bae2574bb076449efecccedd9505e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerBomb: {fileID: 0}
-  nameAnimation: 
+  delay: 0

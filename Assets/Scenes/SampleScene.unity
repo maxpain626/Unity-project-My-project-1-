@@ -1540,7 +1540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: delay
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: triggerBomb
