@@ -529,10 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  addForce: 10
-  projectAxis: 0
-  isFacingRight: 1
-  addForceButton: 32
+  addForce: 8
 --- !u!50 &589509749
 Rigidbody2D:
   serializedVersion: 4

@@ -5,19 +5,13 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] float addForce = 10f;
-    public enum ProjectAxis { onlyX = 0, xAndY = 1 };
-    public ProjectAxis projectAxis = ProjectAxis.onlyX;
-    public bool isFacingRight = true;
+    [SerializeField] float addForce = 5f;
     private bool jumpHero = false;
-    private float rotationY;
     private Rigidbody2D body;
-    public KeyCode addForceButton = KeyCode.Space;
+    private KeyCode addForceButton = KeyCode.Space;
     private Vector2 direction;
-    private float vertical;
-    private float horizontal;
+    private bool jump;
 
-    public float delay = 0f;
     private Animator animator;
 
     void Start()
@@ -43,17 +37,9 @@ public class PlayerBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
-        body.AddForce(direction * body.mass * moveSpeed);
-        if (Mathf.Abs(body.velocity.x) > moveSpeed / 100f)
+        if (Input.GetKey(addForceButton) && jumpHero)
         {
-            body.velocity = new Vector2(body.velocity.x, Mathf.Sign(body.velocity.y) * moveSpeed / 100f);
-        }
-        else
-        {
-            if(Input.GetKey(addForceButton) && jumpHero)
-            {
-                body.velocity = new Vector2(0, addForce);
-            }
+            body.velocity = new Vector2(0, addForce);
         }
     }
 
@@ -61,12 +47,12 @@ public class PlayerBehavior : MonoBehaviour
     {
         moveCharacter(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
 
-        if(Input.GetAxis("Horizontal") < 0) // если двигается влево
+        if (Input.GetAxis("Horizontal") < 0) // если двигается влево
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
 
-        if(Input.GetAxis("Horizontal") < 0) // если двигается вправо
+        if (Input.GetAxis("Horizontal") > 0) // если двигается вправо
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
