@@ -5,13 +5,15 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] float addForce = 5f;
-    public float distanceToGround = 0.1f;
+    [SerializeField] float jumpForce = 5f;
+    [SerializeField] private Joystick _joystick;
     public LayerMask groundLayer;
 
+    private float moveInput;
+    private Vector2 _inputVector;
     private bool jumpHero = false;
     private Rigidbody2D body;
-    private KeyCode addForceButton = KeyCode.Space;
+    private KeyCode jumpButton = KeyCode.Space;
     private Animator animator;
     private Collider2D collider2d;
 
@@ -19,6 +21,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         collider2d = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -39,22 +42,24 @@ public class PlayerBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(addForceButton) && jumpHero == true)
+        if (Input.GetKey(jumpButton) && jumpHero == true)
         {
-            body.velocity = new Vector2(0, addForce);
+            body.velocity = new Vector2(0, jumpForce);
         }
+
+
     }
 
     void Update()
     {
-        moveCharacter(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+        moveCharacter(new Vector2(_joystick.Horizontal, Input.GetAxis("Vertical")));
 
-        if (Input.GetAxis("Horizontal") < 0) // если двигается влево
+        if ((_inputVector.x) < 0) // если двигается влево
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
 
-        if (Input.GetAxis("Horizontal") > 0) // если двигается вправо
+        if ((_inputVector.x) > 0) // если двигается вправо
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
