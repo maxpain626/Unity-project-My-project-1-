@@ -52,7 +52,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Update()
     {
-        moveCharacter(new Vector2(_joystick.Horizontal, Input.GetAxis("Vertical")));
+        moveCharacter(new Vector2(_joystick.Horizontal, _joystick.Vertical));
 
         if ((_inputVector.x) < 0) // если двигается влево
         {
@@ -64,7 +64,7 @@ public class PlayerBehavior : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
         }
     }
-
+    
     void moveCharacter(Vector2 direction)
     {
         transform.Translate(direction * moveSpeed * Time.deltaTime);
