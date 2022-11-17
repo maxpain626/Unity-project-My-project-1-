@@ -404,10 +404,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floating Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 8170153791668043271, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9cd2bffb09830984b957e397e6f05dd5, type: 3}
     - target: {fileID: 8170153792821263252, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 9cd2bffb09830984b957e397e6f05dd5, type: 3}
+    - target: {fileID: 8170153792821263252, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170153792821263258, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8170153792821263258, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -147
@@ -415,6 +427,10 @@ PrefabInstance:
     - target: {fileID: 8170153792821263258, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170153792821263259, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+      propertyPath: m_Name
+      value: BackgroundClick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
@@ -444,18 +460,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373435297}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1730994731}
+  m_Father: {fileID: 213745672}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.011108398}
+  m_SizeDelta: {x: 0, y: 0.022216797}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &373435299
 Animator:
@@ -524,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376888284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Environment
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -549,7 +565,7 @@ Transform:
   - {fileID: 2073304114}
   - {fileID: 530144467}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459880330 stripped
 GameObject:
@@ -676,6 +692,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1313884801}
+  - {fileID: 1730994731}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -704,7 +721,7 @@ GameObject:
   - component: {fileID: 530144468}
   m_Layer: 0
   m_Name: GroundPlane02
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,7 +735,7 @@ Transform:
   m_GameObject: {fileID: 530144466}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.0323, y: -4.4294, z: -1}
-  m_LocalScale: {x: 0.77752554, y: 0.7585775, z: 1}
+  m_LocalScale: {x: 0.7775255, y: 0.7585775, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 376888284}
@@ -882,7 +899,7 @@ Transform:
   - {fileID: 1828891278}
   - {fileID: 265754352}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1103577592
 PrefabInstance:
@@ -938,6 +955,10 @@ PrefabInstance:
     - target: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: m_Name
       value: Bomb02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: delay
@@ -1227,9 +1248,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 213745672}
-  - {fileID: 373435298}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1249,7 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1588,7 +1608,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073304113
 GameObject:
@@ -1712,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyBat01
       objectReference: {fileID: 0}
+    - target: {fileID: 4160852192785577151, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
 --- !u!4 &5939086060973223832 stripped
@@ -1756,7 +1780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327820457620427447, guid: aea11ff001fabec49bb5593fc1efda8e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6327820457620427447, guid: aea11ff001fabec49bb5593fc1efda8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1854,6 +1878,10 @@ PrefabInstance:
     - target: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: m_Name
       value: Bomb01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8207492619877773360, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: delay
