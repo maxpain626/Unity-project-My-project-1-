@@ -4823,6 +4823,8 @@ GameObject:
   - component: {fileID: 375869969830979567}
   - component: {fileID: 3960986602696940677}
   - component: {fileID: 3960986602696940676}
+  - component: {fileID: 857881716500640562}
+  - component: {fileID: 5269756407461784576}
   m_Layer: 0
   m_Name: HealthPickUp
   m_TagString: Untagged
@@ -4924,3 +4926,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4318094, y: 2.3353877}
   m_EdgeRadius: 0
+--- !u!114 &857881716500640562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960986602696940701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290039df3b57ce145be1968f8a6663cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &5269756407461784576
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960986602696940701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 154032c17d3165c47adf79d02f56a46f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

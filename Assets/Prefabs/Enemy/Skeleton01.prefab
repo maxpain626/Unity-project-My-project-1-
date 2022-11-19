@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4258317895038090461}
   - component: {fileID: 4258317895038090460}
   - component: {fileID: 4258317895038090451}
+  - component: {fileID: 6469898542947356704}
   m_Layer: 0
   m_Name: Skeleton01
   m_TagString: Untagged
@@ -160,3 +161,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6469898542947356704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258317895038090449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d513fbd1f37ff4847b25a1dffb78aaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLerp: 0
+  firstPosition: {x: -1.63, y: 1.09}
+  secondPosition: {x: 1.05, y: 1.08}
