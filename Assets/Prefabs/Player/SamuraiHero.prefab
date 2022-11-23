@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6327820457620427441}
   - component: {fileID: 6327820457620427443}
   - component: {fileID: 6327820457620427452}
+  - component: {fileID: 136540604}
+  - component: {fileID: 136540611}
   m_Layer: 0
   m_Name: SamuraiHero
   m_TagString: Player
@@ -31,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 6327820457620427445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.05, y: -2.45, z: -1}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 768, y: 768, z: 768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,8 +103,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3898a24f98373428d0cf36d20b7ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  addForce: 8
+  moveSpeed: 5
+  jumpForce: 5
+  _joystick: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!61 &6327820457620427442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -182,3 +188,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba705582a161efc4d9cae95e9a584935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &136540604
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327820457620427445}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0040546656, y: -0.015228182}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.29026574, y: 0.2855817}
+  m_EdgeRadius: 0
+--- !u!114 &136540611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327820457620427445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6004a7253731bb740a3f51cebdc58c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthDefault: 100

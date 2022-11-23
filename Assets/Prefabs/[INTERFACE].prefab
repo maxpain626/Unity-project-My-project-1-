@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 2013158368917096201}
   - component: {fileID: 1273313546860107648}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: EscMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 200
     m_Bottom: 0
   m_ChildAlignment: 4
   m_StartCorner: 2
