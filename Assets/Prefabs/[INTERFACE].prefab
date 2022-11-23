@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 4253015586128264446}
   - component: {fileID: 4253015586128264447}
   - component: {fileID: 4253015586128264440}
+  - component: {fileID: 4334488724553550524}
   m_Layer: 5
   m_Name: EscMenu
   m_TagString: Untagged
@@ -434,6 +435,18 @@ MonoBehaviour:
   m_Spacing: {x: 107.95, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &4334488724553550524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4253015586128264442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7ac407bc4450e4bbc548bcd9fb1b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4253015586205957079
 GameObject:
   m_ObjectHideFlags: 0
