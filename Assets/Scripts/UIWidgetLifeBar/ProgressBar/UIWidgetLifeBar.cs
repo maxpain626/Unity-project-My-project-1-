@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIWidgetLifeBar : MonoBehaviour
 {
-    [SerializeField] private ProgressBar progressBar;
+    [SerializeField] private Image healthBarFilling;
 
-    private void OnEnable()
+    [SerializeField] private ProgressBar health;
+
+    private void Awake()
     {
-
+        health.HealthChanged += OnHealthChanged;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
-        
+        health.HealthChanged -= OnHealthChanged;
+    }
+
+    private void OnHealthChanged(float valueAsPercentage)
+    {
+        healthBarFilling.fillAmount = valueAsPercentage;
     }
 }
