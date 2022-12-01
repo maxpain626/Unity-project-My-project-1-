@@ -72,4 +72,12 @@ public class PlayerBehavior : MonoBehaviour
     {
         transform.Translate(direction * moveSpeed * Time.deltaTime);
     }
+
+    public void JumpHero()
+    {
+        if (jumpHero == true)
+        {
+            body.velocity = new Vector2(0, jumpForce);
+        }
+    }
 }
