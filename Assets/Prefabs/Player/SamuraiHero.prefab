@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6327820457620427442}
   - component: {fileID: 6327820457620427441}
   - component: {fileID: 6327820457620427443}
-  - component: {fileID: 6327820457620427452}
   - component: {fileID: 136540604}
   - component: {fileID: 705300831381509994}
+  - component: {fileID: 8956539393446151424}
   m_Layer: 0
   m_Name: SamuraiHero
   m_TagString: Player
@@ -176,18 +176,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6327820457620427452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6327820457620427445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba705582a161efc4d9cae95e9a584935, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &136540604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -228,3 +216,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imgFiller: {fileID: 0}
   maxHealth: 100
+--- !u!114 &8956539393446151424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327820457620427445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22182cb5a84203245be2bfa733ae7d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgFiller: {fileID: 0}

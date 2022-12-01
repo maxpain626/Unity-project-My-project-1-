@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour
 {
+    [Header("Movement")]
+    [Space(height:2)]
+
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float jumpForce = 5f;
     [SerializeField] private Joystick _joystick;

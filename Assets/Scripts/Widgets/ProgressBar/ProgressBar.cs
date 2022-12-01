@@ -31,13 +31,13 @@ public class ProgressBar : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            ChangeHealth(-10);
+            ChangeHealth(10);
         }
     }
 
     public void ChangeHealth(int value)
     {
-        currentHealth += value;
+        currentHealth -= value;
 
         if (currentHealth <= 0)
         {
