@@ -55,7 +55,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Update()
     {
-        moveCharacter(new Vector2(_joystick.Horizontal, _joystick.Vertical));
+        moveCharacter(new Vector2(_joystick.Horizontal, 0));
 
         if ((_inputVector.x) < 0) // если двигается влево
         {
