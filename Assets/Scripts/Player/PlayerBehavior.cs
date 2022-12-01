@@ -12,6 +12,12 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] private Joystick _joystick;
     public LayerMask groundLayer;
 
+    [Header("Attack")]
+    [Space(height: 2)]
+
+    [SerializeField] private GameObject suriken;
+    [SerializeField] private float surikenSpeed = 100f;
+
     private float moveInput;
     private Vector2 _inputVector;
     private bool jumpHero = false;
@@ -49,8 +55,6 @@ public class PlayerBehavior : MonoBehaviour
         {
             body.velocity = new Vector2(0, jumpForce);
         }
-
-
     }
 
     void Update()
@@ -79,5 +83,14 @@ public class PlayerBehavior : MonoBehaviour
         {
             body.velocity = new Vector2(0, jumpForce);
         }
+    }
+
+    public void strikeSuriken()
+    {
+        GameObject newSuriken = Instantiate(suriken, this.transform.position + new Vector3(0, 1, 0), this.transform.rotation) as GameObject;
+
+        Rigidbody2D surikenRB = newSuriken.GetComponent<Rigidbody2D>();
+
+        surikenRB.velocity = this.transform.forward * surikenSpeed;
     }
 }

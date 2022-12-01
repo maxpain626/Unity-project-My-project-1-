@@ -103,12 +103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3898a24f98373428d0cf36d20b7ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
+  moveSpeed: 6
+  jumpForce: 6
   _joystick: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  suriken: {fileID: 7644395699550737263, guid: dc16e4960d9d45c4d813cd031e7b923e, type: 3}
+  surikenSpeed: 100
 --- !u!61 &6327820457620427442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -229,3 +231,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imgFiller: {fileID: 0}
+  sliderHP: {fileID: 0}
