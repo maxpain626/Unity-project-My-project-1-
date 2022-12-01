@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     public static float playerHealth;
     public static bool gameOver;
     [SerializeField] private Image imgFiller;
+    [SerializeField] private Slider sliderHP;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-
+        
 
         if (gameOver)
         {
