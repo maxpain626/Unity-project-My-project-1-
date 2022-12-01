@@ -17,7 +17,7 @@ public class BombExplotionTrigger : MonoBehaviour
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             Debug.Log("Booom!");
         }
-        else if (collision.gameObject.tag == "Strike")
+        else if (collision.gameObject.tag == "Suriken")
         {
             animator.SetTrigger("explotionTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);

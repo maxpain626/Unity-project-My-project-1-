@@ -110,7 +110,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   suriken: {fileID: 7644395699550737263, guid: dc16e4960d9d45c4d813cd031e7b923e, type: 3}
-  surikenSpeed: 100
+  surikenSpeed: 30
 --- !u!61 &6327820457620427442
 BoxCollider2D:
   m_ObjectHideFlags: 0

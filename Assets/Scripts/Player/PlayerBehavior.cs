@@ -66,7 +66,7 @@ public class PlayerBehavior : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
         }
 
-        if ((_inputVector.x) > 0) // если двигается вправо
+        else if ((_inputVector.x) > 0) // если двигается вправо
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
@@ -91,6 +91,6 @@ public class PlayerBehavior : MonoBehaviour
 
         Rigidbody2D surikenRB = newSuriken.GetComponent<Rigidbody2D>();
 
-        surikenRB.velocity = this.transform.forward * surikenSpeed;
+        surikenRB.velocity = this.transform.up * surikenSpeed;
     }
 }

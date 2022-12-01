@@ -414,7 +414,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1592471822}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.90200007, y: 0.062000003}
   m_AnchorMax: {x: 0.90200007, y: 0.062000003}
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 04be48e5ecf087b468ee7837956fb64e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -540,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1391,7 +1391,7 @@ Transform:
   - {fileID: 1828891278}
   - {fileID: 265754352}
   m_Father: {fileID: 1592471822}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1071360196 stripped
 Transform:
@@ -1878,10 +1878,6 @@ PrefabInstance:
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 213745673}
-    - target: {fileID: 6327820457620427440, guid: aea11ff001fabec49bb5593fc1efda8e, type: 3}
-      propertyPath: surikenSpeed
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 6327820457620427445, guid: aea11ff001fabec49bb5593fc1efda8e, type: 3}
       propertyPath: m_Name
       value: SamuraiHero
@@ -2023,7 +2019,7 @@ RectTransform:
   - {fileID: 449927995}
   - {fileID: 513037285}
   m_Father: {fileID: 1592471822}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2063,13 +2059,13 @@ RectTransform:
   m_Children:
   - {fileID: 51099554}
   - {fileID: 2073304114}
-  - {fileID: 2106050599}
   - {fileID: 2011499479}
   - {fileID: 1069212501}
-  - {fileID: 1591824155}
+  - {fileID: 2106050599}
   - {fileID: 213745672}
   - {fileID: 1705950108}
   - {fileID: 313753895}
+  - {fileID: 1591824155}
   m_Father: {fileID: 1730994731}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2231,7 +2227,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1592471822}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.90200007, y: 0.21200001}
   m_AnchorMax: {x: 0.90200007, y: 0.21200001}
@@ -2258,7 +2254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e6e546cc20e7465419696e9cad914232, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58a511d5ebba7a7458b7fbe2250cd55b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2605,7 +2601,7 @@ GameObject:
   - component: {fileID: 2011499478}
   - component: {fileID: 2011499477}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: EnemyTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2670,7 +2666,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1592471822}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073304113
 GameObject:
@@ -2736,7 +2732,7 @@ Transform:
   m_Children:
   - {fileID: 110415106}
   m_Father: {fileID: 1592471822}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4253015586139909091
 PrefabInstance:

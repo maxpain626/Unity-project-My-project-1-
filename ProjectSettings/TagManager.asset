@@ -7,7 +7,7 @@ TagManager:
   - Ground
   - Bomb
   - EnemyAttack
-  - Strike
+  - Suriken
   layers:
   - Default
   - TransparentFX
