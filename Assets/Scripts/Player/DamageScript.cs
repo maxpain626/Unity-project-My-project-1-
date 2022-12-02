@@ -8,6 +8,10 @@ public class DamageScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        PlayerManager.Damage(damageCount);
+        if (collision.gameObject.tag == "Player")
+        {
+            PlayerManager.Damage(damageCount);
+            Debug.Log("PlayerManager");
+        }
     }
 }

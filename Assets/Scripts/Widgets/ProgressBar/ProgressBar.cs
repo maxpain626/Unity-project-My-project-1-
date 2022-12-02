@@ -9,7 +9,9 @@ public class ProgressBar : MonoBehaviour
     [Header("Health stats")]
     [SerializeField] private Image imgFiller;
     [SerializeField] private int maxHealth = 100;
-    private int currentHealth;
+    public Collision2D collision;
+    public int currentHealth;
+    public GameObject bomb;
 
     /*
     public void SetValue(float valueNormalized)
@@ -27,12 +29,21 @@ public class ProgressBar : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (collision.gameObject.tag == "Bomb")
         {
             ChangeHealth(10);
+            Update();
         }
+    }
+
+    public void Update()
+    {
+        /*if (collision.gameObject == bomb)
+        {
+            ChangeHealth(10);
+        }*/
     }
 
     public void ChangeHealth(int value)
@@ -47,6 +58,7 @@ public class ProgressBar : MonoBehaviour
         {
             float currentHealthPercentage = (float)currentHealth / maxHealth;
             HealthChanged?.Invoke(currentHealthPercentage);
+            Debug.Log("progressBar F else");
         }
     }
 

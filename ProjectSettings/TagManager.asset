@@ -8,6 +8,7 @@ TagManager:
   - Bomb
   - EnemyAttack
   - Suriken
+  - PlayerHP
   layers:
   - Default
   - TransparentFX

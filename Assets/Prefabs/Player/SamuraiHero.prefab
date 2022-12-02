@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 136540604}
   - component: {fileID: 705300831381509994}
   - component: {fileID: 8956539393446151424}
+  - component: {fileID: 5291256773288532836}
   m_Layer: 0
   m_Name: SamuraiHero
   m_TagString: Player
@@ -211,7 +212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6327820457620427445}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f577a561aac918428e97442e51046a1, type: 3}
   m_Name: 
@@ -225,10 +226,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6327820457620427445}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22182cb5a84203245be2bfa733ae7d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imgFiller: {fileID: 0}
   sliderHP: {fileID: 0}
+--- !u!114 &5291256773288532836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327820457620427445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb280ce57f5a9749818b2b84bd3ac7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
