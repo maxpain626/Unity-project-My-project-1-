@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
+  boomSound: {fileID: 2851310571463289575}
 --- !u!114 &8881640552042780562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +315,7 @@ AudioSource:
   m_GameObject: {fileID: 8207492619588495036}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2966591186252235370, guid: dd82a159efccd454386d73e76af4846f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 4d79cb99dbcd26943844e927364dbaff, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

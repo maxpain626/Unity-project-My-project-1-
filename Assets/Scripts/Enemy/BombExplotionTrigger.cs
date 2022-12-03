@@ -7,6 +7,8 @@ public class BombExplotionTrigger : MonoBehaviour
     public float delay = 0f;
     private Animator animator;
 
+    public AudioSource boomSound;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         animator = GetComponent<Animator>();
@@ -15,12 +17,14 @@ public class BombExplotionTrigger : MonoBehaviour
         {
             animator.SetTrigger("explotionTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+            boomSound.Play();
             Debug.Log("Booom!");
         }
         else if (collision.gameObject.tag == "Suriken")
         {
             animator.SetTrigger("explotionTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+            boomSound.Play();
             Debug.Log("Booom!");
         }
     }
