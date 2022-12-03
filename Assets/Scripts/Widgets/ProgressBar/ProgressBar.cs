@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class ProgressBar : MonoBehaviour
 {
@@ -14,15 +15,8 @@ public class ProgressBar : MonoBehaviour
 
     [Header("Take damage")]
     public GameObject bomb;
+    public int damageCount;
 
-    /*
-    public void SetValue(float valueNormalized)
-    {
-        this.imgFiller.fillAmount = valueNormalized;
-
-        var valueInPercent = Mathf.RoundToInt(f: valueNormalized * 100f);
-    }
-    */
 
     public event Action<float> HealthChanged;
 
@@ -35,17 +29,14 @@ public class ProgressBar : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bomb")
         {
-            ChangeHealth(10);
+            ChangeHealth(damageCount);
             Update();
         }
     }
 
     public void Update()
     {
-        /*if (collision.gameObject == bomb)
-        {
-            ChangeHealth(10);
-        }*/
+        
     }
 
     public void ChangeHealth(int value)
@@ -60,7 +51,6 @@ public class ProgressBar : MonoBehaviour
         {
             float currentHealthPercentage = (float)currentHealth / maxHealth;
             HealthChanged?.Invoke(currentHealthPercentage);
-            Debug.Log("progressBar F else");
         }
     }
 
@@ -68,5 +58,6 @@ public class ProgressBar : MonoBehaviour
     {
         HealthChanged?.Invoke(0);
         Debug.Log("You are dead.");
+        SceneManager.LoadScene(0);
     }
 }
