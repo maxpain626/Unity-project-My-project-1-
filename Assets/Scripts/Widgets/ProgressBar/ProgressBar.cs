@@ -11,6 +11,8 @@ public class ProgressBar : MonoBehaviour
     [SerializeField] private int maxHealth = 100;
     public Collision2D collision;
     public int currentHealth;
+
+    [Header("Take damage")]
     public GameObject bomb;
 
     /*
