@@ -30,7 +30,7 @@ public class ProgressBar : MonoBehaviour
         if (collision.gameObject.tag == "Bomb")
         {
             ChangeHealth(damageCount);
-            Update();
+            //Update();
         }
     }
 

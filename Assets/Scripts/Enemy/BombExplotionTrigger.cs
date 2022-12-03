@@ -27,5 +27,12 @@ public class BombExplotionTrigger : MonoBehaviour
             boomSound.Play();
             Debug.Log("Booom!");
         }
+        else if (collision.gameObject.tag == "Ground")
+        {
+            animator.SetTrigger("explotionTrigger");
+            Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+            boomSound.Play();
+            Debug.Log("Booom!");
+        }
     }
 }

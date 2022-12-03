@@ -773,6 +773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513037285}
   - component: {fileID: 513037286}
+  - component: {fileID: 513037287}
   m_Layer: 0
   m_Name: GroundBottom01
   m_TagString: Ground
@@ -826,6 +827,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1151.2014, y: 396.7393}
   m_EdgeRadius: 0
+--- !u!114 &513037287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513037284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f577a561aac918428e97442e51046a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgFiller: {fileID: 896606618}
+  maxHealth: 100
+  currentHealth: 0
+  bomb: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+  damageCount: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
