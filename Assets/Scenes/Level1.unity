@@ -1023,6 +1023,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EnemyAttack
       objectReference: {fileID: 0}
+    - target: {fileID: 2851310571463289575, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851310571463289575, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851310571463289575, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851310571463289575, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+      propertyPath: BypassListenerEffects
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6951654022374810915, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.37734956
