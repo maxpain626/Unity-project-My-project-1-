@@ -3015,7 +3015,7 @@ GameObject:
   - component: {fileID: 1964440768}
   - component: {fileID: 1964440767}
   m_Layer: 0
-  m_Name: Text (Legacy)
+  m_Name: CoinsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
