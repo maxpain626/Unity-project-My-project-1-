@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class GameBehavior : MonoBehaviour
 {
-    private int _coinsCollected;
-    private float _playerHP = 100f;
-    private string _firstName;
+    private int coinsCollected = 0;
+    private float playerHP = 100f;
+    private string firstName;
 
     public int Coins
     {
         get
         {
-            return _coinsCollected;
+            return coinsCollected;
         }
 
         set
         {
-            _coinsCollected = value;
-            Debug.LogFormat("Coins: {0}", _coinsCollected);
+            coinsCollected = value;
+            Debug.LogFormat("Coins: {0}", coinsCollected);
         }
     }
 
@@ -26,12 +26,24 @@ public class GameBehavior : MonoBehaviour
     {
         get
         {
-            return _playerHP = 100f;
+            return playerHP = 100f;
         }
         set
         {
-            _playerHP = value;
-            Debug.LogFormat("HealthPoints: {0}", _playerHP);
+            playerHP = value;
+            Debug.LogFormat("HealthPoints: {0}", playerHP);
+        }
+    }
+
+    public string FirstName
+    {
+        get
+        {
+            return firstName;
+        }
+        set
+        {
+            firstName = value;
         }
     }
 }
