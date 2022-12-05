@@ -10,6 +10,7 @@ TagManager:
   - Suriken
   - PlayerHP
   - Coins
+  - Enemy
   layers:
   - Default
   - TransparentFX

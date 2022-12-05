@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class CoinsBehavior : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public AudioSource coinsSound;
+
+    private void Start()
     {
-        if (collision.CompareTag("Player"))
+        CoinsText.Coins = 0;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
             CoinsText.Coins += 1;
+            coinsSound.Play();
             Destroy(gameObject);
         }
-        //else if (collision.gameObject.tag == "Enemy")
-        //{
-        //    Physics2D.IgnoreCollision();
-        //}
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Money!");
+        }
     }
 }

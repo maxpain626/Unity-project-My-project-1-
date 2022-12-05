@@ -33,6 +33,7 @@ public class PlayerBehavior : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.transform.tag == "Ground")

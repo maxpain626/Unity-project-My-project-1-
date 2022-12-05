@@ -23,6 +23,12 @@ public class EnemySpawnTrigger : MonoBehaviour
         }
     }
 
+    private void OnClick()
+    {
+        InvokeRepeating("EnemySpawner", 0.5f, RepeatRate);
+        Destroy(gameObject, DestroySpawner);
+    }
+
     private void EnemySpawner()
     {
         _randomSpawnPoints = Random.Range(0, EnemySpawnerPosition.Length);

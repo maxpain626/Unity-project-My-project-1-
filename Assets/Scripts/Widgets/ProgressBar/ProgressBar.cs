@@ -27,7 +27,7 @@ public class ProgressBar : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Bomb")
+        if (collision.gameObject.tag == "Enemy")
         {
             ChangeHealth(damageCount);
             //Update();
