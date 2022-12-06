@@ -7,7 +7,7 @@ public class BombExplotionTrigger : MonoBehaviour
     public float delay = 0f;
     private Animator animator;
 
-    public AudioSource boomSound;
+    [SerializeField] AudioSource boomSound;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
