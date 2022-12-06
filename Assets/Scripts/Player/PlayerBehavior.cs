@@ -18,6 +18,11 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] private GameObject suriken;
     [SerializeField] private float surikenSpeed = 100f;
 
+    [Header("Sounds")]
+    [Space(height: 2)]
+
+    [SerializeField] AudioSource coinsSound;
+
     private float moveInput;
     private Vector2 _inputVector;
     private bool jumpHero = false;
@@ -47,6 +52,14 @@ public class PlayerBehavior : MonoBehaviour
         if(collision.transform.tag == "Ground")
         {
             jumpHero = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Coins")
+        {
+            coinsSound.Play();
         }
     }
 
