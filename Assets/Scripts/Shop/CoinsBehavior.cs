@@ -6,7 +6,7 @@ public class CoinsBehavior : MonoBehaviour
 {
     private void Start()
     {
-        CoinsText.Coins = 0;
+        //CoinsText.Coins = 0;
         
     }
 

@@ -18,12 +18,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - IgnoreCollisions
   - Ground
-  - 
-  - 
-  - 
+  - Enemy
+  - Strike
+  - Coins
   - 
   - 
   - 
