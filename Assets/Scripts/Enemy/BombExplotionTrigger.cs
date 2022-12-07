@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BombExplotionTrigger : MonoBehaviour
 {
+    public GameObject coinsOnDestroy;
     public float delay = 0f;
     private Animator animator;
 
@@ -25,6 +26,8 @@ public class BombExplotionTrigger : MonoBehaviour
             animator.SetTrigger("explotionTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             boomSound.Play();
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
+            GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
             Debug.Log("Booom!");
         }
         else if (collision.gameObject.tag == "Ground")

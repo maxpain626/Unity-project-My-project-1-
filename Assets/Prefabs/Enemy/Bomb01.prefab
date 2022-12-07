@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106bae2574bb076449efecccedd9505e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsOnDestroy: {fileID: 5388046154122784248, guid: f60308d594be8b843b3260a49f54dc48, type: 3}
   delay: 0
-  damageCount: 10
   boomSound: {fileID: 2851310571463289575}
 --- !u!114 &8881640552042780562
 MonoBehaviour:
@@ -416,4 +416,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ee3f43831441e4796b9c794e177932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: {fileID: 8058501594348925088, guid: f60308d594be8b843b3260a49f54dc48, type: 3}
+  coins: {fileID: 5388046154122784248, guid: f60308d594be8b843b3260a49f54dc48, type: 3}
