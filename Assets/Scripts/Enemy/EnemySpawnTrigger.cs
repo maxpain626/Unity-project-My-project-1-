@@ -7,9 +7,10 @@ using UnityEngine;
 /// </summary>
 public class EnemySpawnTrigger : MonoBehaviour
 {
-    public GameObject Enemy;
+    public GameObject[] Enemies;
     public Transform[] EnemySpawnerPosition;
     private int _randomSpawnPoints;
+    private int _randomEnemy;
     public float RepeatRate = 3f;
     public int DestroySpawner = 20;
 
@@ -32,6 +33,7 @@ public class EnemySpawnTrigger : MonoBehaviour
     private void EnemySpawner()
     {
         _randomSpawnPoints = Random.Range(0, EnemySpawnerPosition.Length);
-        Instantiate(Enemy, EnemySpawnerPosition[_randomSpawnPoints].position, Quaternion.identity);
+        _randomEnemy = Random.Range(0, Enemies.Length);
+        Instantiate(Enemies[_randomEnemy], EnemySpawnerPosition[_randomSpawnPoints].position, Quaternion.identity);
     }
 }

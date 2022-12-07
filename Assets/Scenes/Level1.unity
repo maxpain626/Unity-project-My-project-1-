@@ -1152,11 +1152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4160852192785577149, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.89
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 4160852192785577149, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.54
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 4160852192785577149, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1196,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4160852192785577151, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
@@ -1733,10 +1733,10 @@ RectTransform:
   m_Father: {fileID: 1592471822}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.9658957}
-  m_AnchorMax: {x: 0.27570373, y: 1}
-  m_AnchoredPosition: {x: -2.3850098, y: 0}
-  m_SizeDelta: {x: -4.75, y: 0}
+  m_AnchorMin: {x: 0, y: 0.94600004}
+  m_AnchorMax: {x: 0.28955558, y: 0.98587507}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166846293
 MonoBehaviour:
@@ -3308,14 +3308,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e338040e55068f94ca603d4e1bb5c1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+  Enemies:
+  - {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+  - {fileID: 4160852192785577151, guid: 660102ecd7b5bf944998d4973c2e05be, type: 3}
   EnemySpawnerPosition:
   - {fileID: 1938923195}
   - {fileID: 101492}
   - {fileID: 1828891278}
   - {fileID: 265754352}
   RepeatRate: 1
-  DestroySpawner: 20
+  DestroySpawner: 30
 --- !u!61 &2011499478
 BoxCollider2D:
   m_ObjectHideFlags: 0
