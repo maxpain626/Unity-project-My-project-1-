@@ -19,7 +19,6 @@ public class EnemyBatExplotion : MonoBehaviour
             animator.SetTrigger("dieTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             dieSound.Play();
-            Debug.Log("Booom!");
         }
         else if (collision.gameObject.tag == "Suriken")
         {
@@ -28,7 +27,6 @@ public class EnemyBatExplotion : MonoBehaviour
             dieSound.Play();
             Destroy(gameObject.GetComponent<BoxCollider2D>());
             GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
-            Debug.Log("Booom!");
         }
         else if (collision.gameObject.tag == "Ground")
         {
