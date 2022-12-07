@@ -14,7 +14,7 @@ public class CoinsBehavior : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            CoinsText.Coins += 1;
+            //CoinsText.Coins += 1;
             Destroy(gameObject);
         }
     }

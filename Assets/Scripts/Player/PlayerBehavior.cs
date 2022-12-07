@@ -36,6 +36,8 @@ public class PlayerBehavior : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         collider2d = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
+
+        CoinsText.Coins = 0;
     }
 
 
@@ -59,6 +61,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (collision.gameObject.tag == "Coins")
         {
+            CoinsText.Coins += 1;
             coinsSound.Play();
         }
     }
