@@ -19,15 +19,15 @@ public class EnemySpawnTrigger : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             InvokeRepeating("EnemySpawner", 0.5f, RepeatRate);
-            Destroy(gameObject, DestroySpawner);
+            //Destroy(gameObject, DestroySpawner);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
-    private void OnClick()
+    public void OnClickFight()
     {
         InvokeRepeating("EnemySpawner", 0.5f, RepeatRate);
-        Destroy(gameObject, DestroySpawner);
+        this.gameObject.SetActive(false);
     }
 
     private void EnemySpawner()

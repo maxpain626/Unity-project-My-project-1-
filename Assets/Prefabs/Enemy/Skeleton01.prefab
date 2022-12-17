@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 4258317895038090461}
   - component: {fileID: 4258317895038090460}
   - component: {fileID: 4258317895038090451}
-  - component: {fileID: 6469898542947356704}
+  - component: {fileID: 7185067800290254434}
+  - component: {fileID: 8057907865553020157}
+  - component: {fileID: -1998719064314143384}
   m_Layer: 0
   m_Name: Skeleton01
   m_TagString: Enemy
@@ -161,7 +163,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6469898542947356704
+--- !u!114 &7185067800290254434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,9 +172,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 4258317895038090449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d513fbd1f37ff4847b25a1dffb78aaa3, type: 3}
+  m_Script: {fileID: 11500000, guid: 45ee3f43831441e4796b9c794e177932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLerp: 0
-  firstPosition: {x: -1.63, y: 1.09}
-  secondPosition: {x: 1.05, y: 1.08}
+  coins: {fileID: 5388046154122784248, guid: f60308d594be8b843b3260a49f54dc48, type: 3}
+--- !u!95 &8057907865553020157
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258317895038090449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49b53603f43ef564d8ef265192832bba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-1998719064314143384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258317895038090449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dddfaa5cea98a4b9b7a70be29a530b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsOnDestroy: {fileID: 5388046154122784248, guid: f60308d594be8b843b3260a49f54dc48, type: 3}
+  delay: 0
+  dieSound: {fileID: 0}

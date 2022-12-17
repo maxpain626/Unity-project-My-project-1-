@@ -63,6 +63,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             CoinsText.Coins += 1;
             coinsSound.Play();
+            //animator.SetTrigger("coinsTake");
         }
     }
 
