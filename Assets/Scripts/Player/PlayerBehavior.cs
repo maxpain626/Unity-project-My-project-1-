@@ -81,11 +81,13 @@ public class PlayerBehavior : MonoBehaviour
 
         if ((_inputVector.x) < 0) // если двигается влево
         {
+            animator.SetTrigger("axisBoolLeft");
             GetComponent<SpriteRenderer>().flipX = true;
         }
 
         else if ((_inputVector.x) > 0) // если двигается вправо
         {
+            animator.SetTrigger("axisBoolLeft");
             GetComponent<SpriteRenderer>().flipX = false;
         }
     }
