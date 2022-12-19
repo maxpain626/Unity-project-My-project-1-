@@ -65,6 +65,10 @@ public class PlayerBehavior : MonoBehaviour
             coinsSound.Play();
             //animator.SetTrigger("coinsTake");
         }
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            animator.SetTrigger("hitSword01");
+        }
     }
 
     private void FixedUpdate()
