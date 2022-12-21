@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4258317895038090461}
   - component: {fileID: 4258317895038090460}
   - component: {fileID: 4258317895038090451}
-  - component: {fileID: 7185067800290254434}
   - component: {fileID: 8057907865553020157}
   - component: {fileID: -1998719064314143384}
   - component: {fileID: 738738080083726282}
@@ -164,19 +163,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7185067800290254434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4258317895038090449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45ee3f43831441e4796b9c794e177932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coins: {fileID: 5388046154122784248, guid: f60308d594be8b843b3260a49f54dc48, type: 3}
 --- !u!95 &8057907865553020157
 Animator:
   serializedVersion: 4

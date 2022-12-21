@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8207492619877773360}
   - component: {fileID: 8881640552042780562}
   - component: {fileID: 2851310571463289575}
-  - component: {fileID: 9162838883449316772}
   m_Layer: 0
   m_Name: Bomb01
   m_TagString: Enemy
@@ -288,16 +287,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &9162838883449316772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8207492619588495036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45ee3f43831441e4796b9c794e177932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coins: {fileID: 5388046154122784248, guid: f60308d594be8b843b3260a49f54dc48, type: 3}

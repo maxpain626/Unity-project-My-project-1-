@@ -17,16 +17,17 @@ public class EnemyBatExplotion : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             animator.SetTrigger("dieTrigger");
+            Destroy(this.gameObject.GetComponent<BoxCollider2D>());
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             dieSound.Play();
             GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
         }
         else if (collision.gameObject.tag == "Suriken")
         {
+            Destroy(this.gameObject.GetComponent<BoxCollider2D>());
             animator.SetTrigger("dieTrigger");
             Destroy(this.gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             dieSound.Play();
-            Destroy(this.gameObject.GetComponent<BoxCollider2D>());
             GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
         }
         else if (collision.gameObject.tag == "Ground")

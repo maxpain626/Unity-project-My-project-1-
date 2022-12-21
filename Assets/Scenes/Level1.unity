@@ -1579,7 +1579,7 @@ MonoBehaviour:
   - {fileID: 101492}
   - {fileID: 1828891278}
   - {fileID: 265754352}
-  repeatRate: 3
+  repeatRate: 2
   destroySpawner: 20
 --- !u!114 &1057674687
 MonoBehaviour:

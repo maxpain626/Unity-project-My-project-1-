@@ -16,6 +16,7 @@ public class BombExplotionTrigger : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            Destroy(this.gameObject.GetComponent<BoxCollider2D>());
             animator.SetTrigger("explotionTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             boomSound.Play();

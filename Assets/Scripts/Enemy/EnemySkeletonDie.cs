@@ -17,6 +17,7 @@ public class EnemySkeletonDie : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             animator.SetTrigger("dieSkeleton");
+            Destroy(this.gameObject.GetComponent<BoxCollider2D>());
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             dieSound.Play();
             GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
