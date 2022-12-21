@@ -19,13 +19,14 @@ public class EnemyBatExplotion : MonoBehaviour
             animator.SetTrigger("dieTrigger");
             Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             dieSound.Play();
+            GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
         }
         else if (collision.gameObject.tag == "Suriken")
         {
             animator.SetTrigger("dieTrigger");
-            Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+            Destroy(this.gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
             dieSound.Play();
-            Destroy(gameObject.GetComponent<BoxCollider2D>());
+            Destroy(this.gameObject.GetComponent<BoxCollider2D>());
             GameObject newObject = Instantiate(coinsOnDestroy, gameObject.GetComponent<Transform>().position, Quaternion.identity) as GameObject;
         }
         else if (collision.gameObject.tag == "Ground")

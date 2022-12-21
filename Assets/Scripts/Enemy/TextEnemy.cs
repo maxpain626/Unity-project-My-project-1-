@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextEnemy : MonoBehaviour
 {
-    public static int Enemies;
+    public static int enemies;
     Text text;
 
     void Start()
@@ -16,6 +16,6 @@ public class TextEnemy : MonoBehaviour
 
     void Update()
     {
-        text.text = ("Enemies: " + Enemies.ToString());
+        text.text = ("Enemies: " + enemies.ToString());
     }
 }

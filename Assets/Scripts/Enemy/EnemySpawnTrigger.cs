@@ -11,14 +11,14 @@ public class EnemySpawnTrigger : MonoBehaviour
     public Transform[] EnemySpawnerPosition;
     private int _randomSpawnPoints;
     private int _randomEnemy;
-    public float RepeatRate = 3f;
-    public int DestroySpawner = 20;
+    public float repeatRate = 3f;
+    public int destroySpawner = 20;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player")
         {
-            InvokeRepeating("EnemySpawner", 0.5f, RepeatRate);
+            InvokeRepeating("EnemySpawner", 0.5f, repeatRate);
             //Destroy(gameObject, DestroySpawner);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
@@ -26,7 +26,7 @@ public class EnemySpawnTrigger : MonoBehaviour
 
     public void OnClickFight()
     {
-        InvokeRepeating("EnemySpawner", 0.5f, RepeatRate);
+        InvokeRepeating("EnemySpawner", 0.5f, repeatRate);
         this.gameObject.SetActive(false);
     }
 
