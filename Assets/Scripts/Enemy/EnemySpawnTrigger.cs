@@ -12,7 +12,7 @@ public class EnemySpawnTrigger : MonoBehaviour
     private int _randomSpawnPoints;
     private int _randomEnemy;
     public float repeatRate = 3f;
-    public int destroySpawner = 20;
+    public int destroySpawner = 200;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -288,15 +288,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343134299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f577a561aac918428e97442e51046a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imgFiller: {fileID: 896606618}
   maxHealth: 100
-  currentHealth: 0
-  bomb: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+  currentHealth: 100
   damageCount: 10
 --- !u!1 &195717705
 GameObject:
@@ -848,8 +847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imgFiller: {fileID: 896606618}
   maxHealth: 100
-  currentHealth: 0
-  bomb: {fileID: 8207492619588495036, guid: 30c51603c4b34e541af4f60a74513905, type: 3}
+  currentHealth: 100
   damageCount: 10
 --- !u!1 &519420028
 GameObject:
@@ -947,7 +945,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5054592476444019415, guid: dd82a159efccd454386d73e76af4846f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 80f906ce429859a468fb323a01a10534, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9146a3bb3ac33c64cadf7bcf13d6e852, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -3464,7 +3462,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2025439227}
-  - component: {fileID: 2025439226}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3472,18 +3469,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2025439226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025439225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0732e8759fc579489ec07916f993fac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2025439227
 Transform:
   m_ObjectHideFlags: 0

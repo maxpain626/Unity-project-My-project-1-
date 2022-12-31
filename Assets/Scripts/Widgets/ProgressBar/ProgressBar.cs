@@ -14,7 +14,6 @@ public class ProgressBar : MonoBehaviour
     public int currentHealth;
 
     [Header("Take damage")]
-    public GameObject bomb;
     public int damageCount;
 
 
